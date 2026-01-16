@@ -94,7 +94,7 @@ if __name__ == "__main__":
     logger.info("Starting Calculator MCP Server...")
     logger.info("Server is running and waiting for connections via stdio")
     try:
-        mcp.run()  # stdio transport by default
+        mcp.run("http")  # stdio transport by default
     except KeyboardInterrupt:
         logger.info("Server interrupted by user.")
     except Exception:
